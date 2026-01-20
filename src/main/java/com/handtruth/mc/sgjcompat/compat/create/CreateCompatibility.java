@@ -73,10 +73,10 @@ public final class CreateCompatibility {
         target.ifPresent(CreateCompatibility::disconnectTrack);
     }
 
-    private static final Vec3 CENTER_OFFSET = new Vec3(.5, .5, .5);
+    private static final Vec3 CENTER_OFFSET = new Vec3(.5, 3.5, .5);
 
     private static Optional<AbstractStargateEntity> unwrapStargate(final MinecraftServer server, final Stargate stargate) {
-        final Vec3 rawPosition = stargate.getPosition();
+        final Vec3 rawPosition = stargate.getPosition(server);
         if (rawPosition == null) {
             return Optional.empty();
         }
