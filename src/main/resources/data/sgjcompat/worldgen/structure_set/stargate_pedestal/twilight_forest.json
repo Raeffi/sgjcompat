@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "sgjcompat:restricted_biome_single_origin",
+    "biomes": "#sgjcompat:twilight_forest_stargate",
+    "minBuildHeight": -32,
+    "height": 288
+  },
+  "structures": [
+    {
+      "structure": "sgjcompat:stargate_pedestal/twilight_forest",
+      "weight": 1
+    }
+  ]
+}

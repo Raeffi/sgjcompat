@@ -1,0 +1,14 @@
+{
+  "minVersion": "0.8.5",
+  "compatibilityLevel": "JAVA_17",
+  "required": true,
+  "package": "com.handtruth.mc.sgjcompat.mixin",
+  "refmap": "mixins.sgjcompat.refmap.json",
+  "mixins": [
+    "ChunkGeneratorStructureStateMixin",
+    "ChunkGeneratorMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

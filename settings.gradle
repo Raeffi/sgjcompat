@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            name = 'MinecraftForge'
+            url = 'https://maven.minecraftforge.net/'
+        }
+        maven {
+            name = 'Mixin'
+            url = 'https://repo.spongepowered.org/repository/maven-public/'
+        }
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == 'org.spongepowered.mixin') {
+                useModule 'org.spongepowered:mixingradle:0.7.38'
+            }
+        }
+    }
+    plugins {
+        id 'org.jetbrains.kotlin.jvm' version '2.2.0'
+    }
+}
+
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
+}
